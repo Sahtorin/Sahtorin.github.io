@@ -36,7 +36,7 @@ p {
     height: 100vh;
     background-image: url('Images/homepage_background.jpg'); 
     background-size: cover;
-    background-position: center;
+    background-position: top center;
     position: relative;
     display: flex;
     flex-direction: column;
