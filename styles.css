@@ -1,34 +1,34 @@
 h1 {
     font-family: 'Boogaloo';
-    font-size: 30 pt;
+    font-size: 30pt;
     font-weight: bold;
     text-align: center;
 }
 
 h2 {
     font-family: 'Boogaloo';
-    font-size: 18 pt;
+    font-size: 18pt;
     font-weight: bold;
     text-align: left; 
 }
 
 h3 {
     font-family: 'Boogaloo';
-    font-size: 18 pt;
+    font-size: 18pt;
     font-weight: bold;
     text-align: right;
 }
 
 h4 {
     font-family: 'Boogaloo';
-    font-size: 14 pt;
+    font-size: 14pt;
     font-weight: bold;
 }
 
 
 p {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 12 pt;
+    font-size: 12pt;
 }
 
 .hero-container {
