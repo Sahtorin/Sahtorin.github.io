@@ -1,6 +1,13 @@
+html, body {
+    background-color: #FFD59A;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
 h1 {
     font-family: 'Boogaloo';
-    font-size: 30pt;
+    font-size: 25pt;
     font-weight: bold;
     text-align: center;
 }
@@ -14,20 +21,46 @@ h2 {
 
 h3 {
     font-family: 'Boogaloo';
-    font-size: 18pt;
+    font-size: 20pt;
     font-weight: bold;
-    text-align: right;
+    text-align: center;
+    text-decoration: underline; 
 }
-
-h4 {
-    font-family: 'Boogaloo';
-    font-size: 14pt;
-    font-weight: bold;
-}
-
 
 p {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 12pt;
+    font-size: 15pt;
 }
 
+.bone-rating {
+    display: flex;
+    align-items:center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.rating-label {
+    font-family: 'Boogaloo';
+    font-size: 15pt;
+    min-width: 80px;
+}
+
+.bones-wrapper {
+    display: flex;
+    gap: 6px;
+}
+
+.bone svg {
+    width: 25px;
+    height: auto;
+}
+
+.bone path {
+    fill: transparent;
+    stroke: #000;
+    stroke-width: 4px;
+}
+
+.bone.filled path {
+    fill: #000;
+}
