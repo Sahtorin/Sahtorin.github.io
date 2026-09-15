@@ -65,3 +65,7 @@ p {
 .bone.filled path {
     fill: #000;
 }
+
+.text-center-wrapper {
+  text-align: center;
+}
