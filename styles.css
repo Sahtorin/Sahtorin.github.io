@@ -10,7 +10,7 @@ body {
     color: #333;
 }
 
-/* Header & Navigation */
+/* heady and navi*/
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -38,7 +38,7 @@ body {
     font-weight: 500;
 }
 
-/* Hero Section */
+/* this is for images */
 .hero-img {
     width: 100%;
     max-width: 1000px;
@@ -47,7 +47,7 @@ body {
     border-radius: 8px;
 }
 
-/* Introduction Paragraph */
+/* intro */
 .intro-text {
     max-width: 800px;
     margin: 40px auto;
@@ -55,7 +55,7 @@ body {
     line-height: 1.6;
 }
 
-/* Card Layout Grid */
+/* card grid */
 .card-grid {
     display: flex;
     justify-content: center;
@@ -73,7 +73,7 @@ body {
     box-shadow: 0 4px 6px rgba(0,0,0,0.05);
 }
 
-/* Footer layout */
+/* Footer */
 .main-footer {
     display: flex;
     justify-content: space-around;

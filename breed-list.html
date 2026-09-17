@@ -109,10 +109,10 @@
                 <span>V</span><span>W</span><span>X</span><span>Y</span><span>Z</span>
             </div>
             
-            <!-- Dynamic Content Output Area -->
+            
             <h3 class="results-heading" id="current-letter-heading">Breeds starting with "A"</h3>
             <ul class="breed-results-list" id="breed-display-list">
-                <!-- JavaScript will populate items here -->
+              <!-- JavaScript will add items here ask teacher how on tuesday -->
             </ul>
         </div>
     </main>
@@ -124,9 +124,9 @@
         </div>
     </footer>
 
-    <!-- INTERACTIVE FILTERING SCRIPT -->
+
     <script>
-        // 1. Mock Database of dog breeds
+        // sample of dog breed database
         const dogBreeds = [
             "Affenpinscher", "Afghan Hound", "Airedale Terrier", "Akita", "Alaskan Malamute",
             "Beagle", "Bernese Mountain Dog", "Bichon Frise", "Bloodhound", "Border Collie", "Boxer",
@@ -145,20 +145,19 @@
         const displayList = document.getElementById('breed-display-list');
         const headingText = document.getElementById('current-letter-heading');
 
-        // 2. Function to filter and render items safely
+
         function displayLetterContent(letter) {
-            // Update the display title
+
             headingText.textContent = `Breeds starting with "${letter}"`;
             
-            // Clear current list content safely
+            
             displayList.innerHTML = '';
 
-            // Filter our array for breeds that match the clicked letter
+
             const filteredBreeds = dogBreeds.filter(breed => 
                 breed.trim().toUpperCase().startsWith(letter)
             );
 
-            // Display results or show a fallback empty notice
             if (filteredBreeds.length === 0) {
                 const emptyNotice = document.createElement('li');
                 emptyNotice.className = 'no-results';
@@ -174,23 +173,23 @@
             }
         }
 
-        // 3. Event Listener setup to handle tab clicks
+
         tabsContainer.addEventListener('click', (event) => {
             if (event.target.tagName === 'SPAN') {
                 // Clear out prior selected active state highlights
                 const allTabs = tabsContainer.querySelectorAll('span');
                 allTabs.forEach(tab => tab.classList.remove('active'));
 
-                // Target and highlight selected node
+
                 event.target.classList.add('active');
 
-                // Re-evaluate query list results frame
+
                 const chosenLetter = event.target.textContent;
                 displayLetterContent(chosenLetter);
             }
         });
 
-        // Initialize display to show letter "A" entries by default on mount
+
         displayLetterContent('A');
     </script>
 </body>
