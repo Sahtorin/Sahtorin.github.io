@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #fcdfa8; /* Matches the peach background */
+    background-color: #fcdfa8;
     color: #333;
 }
 
@@ -38,7 +38,7 @@ body {
     font-weight: 500;
 }
 
-/* this is for images */
+/* images */
 .hero-img {
     width: 100%;
     max-width: 1000px;
