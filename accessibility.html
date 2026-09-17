@@ -1,12 +1,73 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The DogDex - Accessibility</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .center-content {
+            max-width: 800px;
+            margin: 40px auto;
+            text-align: center;
+        }
+        .page-title {
+            font-size: 2rem;
+            text-decoration: underline;
+            margin-bottom: 30px;
+        }
+        .image-placeholder {
+            background-color: #e0e0e0;
+            height: 250px;
+            width: 400px;
+            margin: 0 auto 30px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 4px;
+            color: #777;
+        }
+        .text-block-placeholder {
+            background: #fff;
+            border: 1px solid #ccc;
+            height: 200px;
+            width: 100%;
+            padding: 20px;
+        }
+    </style>
+</head>
 <body>
-<p> In order to make this website as accessibility friendly as possible, 
-    I will implement several features to ensure that users can 
-    navigate and interact with information provided on each page as effectively as possible.
-    This means using colors that contrast easily for users with visual impairments,
-    providing as many visual aids and descriptions as possible, making sure each picture comes
-    with a description, using written and visual aids for the information that is important,
-    and even taking into consideration the positon of the links that allow one to go from
-    page to page. I will also make the written content on each page of my websute as 
-    clear and consice as possible, and will make sure that the information is organized in a way that is easy to follow.
-</p>
+
+    <header class="navbar">
+        <div class="logo"><a href="index.html">The DogDex</a></div>
+        <nav>
+            <ul>
+                <li><a href="breed-list.html">Breed List</a></li>
+                <li><a href="accessibility.html" style="text-decoration: underline;">Accessibility</a></li>
+                <li><a href="sources.html">Sources</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="center-content">
+        <h1 class="page-title">🐾 Accessibility 🐾</h1>
+        
+        <div class="image-placeholder">
+            <span>[Accessibility Image Placeholder]</span>
+        </div>
+
+        <div class="text-block-placeholder">
+            <!-- Accessibility text block content -->
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-column">
+            <h4>The DogDex</h4>
+            <p><a href="breed-list.html">Breed List</a> | <a href="accessibility.html">Accessibility</a> | <a href="sources.html">Sources</a> | <a href="contact.html">Contact</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>

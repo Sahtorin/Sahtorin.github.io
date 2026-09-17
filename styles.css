@@ -1,71 +1,84 @@
-html, body {
-    background-color: #FFD59A;
+* {
     margin: 0;
     padding: 0;
-    min-height: 100vh;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
 }
 
-h1 {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 25pt;
-    font-weight: bold;
-    text-align: center;
+body {
+    background-color: #fcdfa8; /* Matches the peach background */
+    color: #333;
 }
 
-h2 {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 18pt;
-    font-weight: bold;
-    text-align: left; 
-}
-
-h3 {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 20pt;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: underline; 
-}
-
-p {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 15pt;
-    margin: 10px 0;
-}
-
-.bone-rating {
+/* Header & Navigation */
+.navbar {
     display: flex;
-    align-items:center;
-    gap: 10px;
-    margin-bottom: 8px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: transparent;
 }
 
-.rating-label {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 15pt;
-    min-width: 80px;
+.navbar .logo a {
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-decoration: underline;
+    color: #000;
 }
 
-.bones-wrapper {
+.navbar ul {
     display: flex;
-    gap: 6px;
+    list-style: none;
+    gap: 30px;
 }
 
-.bone svg {
-    width: 25px;
-    height: auto;
+.navbar ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
 }
 
-.bone path {
-    fill: transparent;
-    stroke: #000;
-    stroke-width: 4px;
+/* Hero Section */
+.hero-img {
+    width: 100%;
+    max-width: 1000px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
 }
 
-.bone.filled path {
-    fill: #000;
+/* Introduction Paragraph */
+.intro-text {
+    max-width: 800px;
+    margin: 40px auto;
+    text-align: center;
+    line-height: 1.6;
 }
 
-.text-center-wrapper {
-  text-align: center;
+/* Card Layout Grid */
+.card-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+.card {
+    background-color: #fff;
+    padding: 30px 20px;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+/* Footer layout */
+.main-footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    background-color: transparent;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    margin-top: 100px;
 }

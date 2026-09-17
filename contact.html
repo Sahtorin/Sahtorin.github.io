@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The DogDex - Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .contact-container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .contact-container h1 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        /* Top Media/Partnership Cards */
+        .inquiry-grid {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+        .inquiry-card {
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            width: 50%;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        .inquiry-card button {
+            background: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 15px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        /* Lower Form Structure Layout */
+        .form-layout-wrapper {
+            display: flex;
+            gap: 40px;
+        }
+        .message-form-box {
+            width: 55%;
+        }
+        .message-form-box input, .message-form-box textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .message-form-box button {
+            background: #333;
+            color: #fff;
+            padding: 12px 30px;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            width: 100%;
+        }
+        .office-info-pane {
+            width: 45%;
+            display: flex;
+            gap: 20px;
+        }
+        .info-card {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            flex: 1;
+            font-size: 0.9rem;
+            line-height: 1.5;
+            height: fit-content;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo"><a href="index.html">The DogDex</a></div>
+        <nav>
+            <ul>
+                <li><a href="breed-list.html">Breed List</a></li>
+                <li><a href="accessibility.html">Accessibility</a></li>
+                <li><a href="sources.html">Sources</a></li>
+                <li><a href="contact.html" style="text-decoration: underline;">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contact-container">
+        <h1>Contact</h1>
+
+        <!-- Top Row Panel Elements -->
+        <section class="inquiry-grid">
+            <div class="inquiry-card">
+                <h3>Media inquiries</h3>
+                <p style="margin: 10px 0; color:#666;">Integer vitae faucibus erat. Maecenas ac interdum lorem.</p>
+                <button>Contact PR</button>
+            </div>
+            <div class="inquiry-card">
+                <h3>Partnership inquiries</h3>
+                <p style="margin: 10px 0; color:#666;">Integer vitae faucibus erat. Maecenas ac interdum lorem.</p>
+                <button>Contact Sales</button>
+            </div>
+        </section>
+
+        <!-- Lower Messaging Split Row Panel Elements -->
+        <h2>Send us a message</h2>
+        <section class="form-layout-wrapper" style="margin-top: 20px;">
+            <div class="message-form-box">
+                <form action="#" method="POST">
+                    <input type="text" placeholder="Full Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <input type="text" placeholder="Phone number (optional)">
+                    <textarea placeholder="Type your message here" rows="6" required></textarea>
+                    <button type="submit">SEND</button>
+                </form>
+            </div>
+            
+            <div class="office-info-pane">
+                <div class="info-card">
+                    <h4>Editorial Office</h4>
+                    <p style="color:#666; margin-top:5px;">0231 East Parkway<br>San Francisco, CA 93021</p>
+                    <p style="margin-top:10px; font-weight:bold;">Monday - Friday<br>8AM-4PM CST</p>
+                    <p style="margin-top:5px; color: blue;">1-312-123-3213</p>
+                </div>
+                <div class="info-card">
+                    <h4>Shop Customer Service</h4>
+                    <p style="color:#666; margin-top:5px;">92 Oak Tree Avenue<br>Austin, TX 13021</p>
+                    <p style="margin-top:10px; font-weight:bold;">Monday - Friday<br>8AM-5PM CST</p>
+                    <p style="margin-top:5px; color: blue;">1-273-123-1223</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Expanded Footer Panel Array Layout Base Integration Template Area -->
+    <footer class="main-footer">
+        <div class="footer-column">
+            <h4>@ Your Company</h4>
+            <p style="font-size:0.8rem; color:#666; max-width:200px; margin-top:10px;">Donec nec ante nisi. Vestibulum tincidunt lectus sed magna fringilla sagittis.</p>
+            <p style="font-size:0.8rem; margin-top:10px;">© 2026 Your Company. All rights reserved.</p>
+        </div>
+        <div class="footer-column">
+            <h4>Tags</h4>
+            <div style="margin-top:10px; display:flex; flex-wrap:wrap; gap:5px;">
+                <span style="background:#fcdfa8; border:1px solid #aaa; padding:2px 5px; font-size:0.75rem;">HEALTH</span>
+                <span style="background:#fcdfa8; border:1px solid #aaa; padding:2px 5px; font-size:0.75rem;">LIFESTYLE</span>
+                <span style="background:#fcdfa8; border:1px solid #aaa; padding:2px 5px; font-size:0.75rem;">SOCIAL</span>
+            </div>
+        </div>
+        <div class="footer-column">
+            <h4>Social</h4>
+            <p style="margin-top:10px; font-size:0.9rem;">Twitter</p>
+            <p style="font-size:0.9rem;">Facebook</p>
+            <p style="font-size:0.9rem;">Instagram</p>
+        </div>
+        <div class="footer-column">
+            <h4>About</h4>
+            <p style="margin-top:10px; font-size:0.9rem;"><a href="#" style="color:#000; text-decoration:none;">Shop</a></p>
+            <p style="font-size:0.9rem;"><a href="#" style="color:#000; text-decoration:none;">Authors</a></p>
+            <p style="font-size:0.9rem;"><a href="#" style="color:#000; text-decoration:none;">About us</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>
