@@ -6,78 +6,78 @@
     <title>The DogDex - Breed List</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        .breed-container {
+        .list-workspace {
             max-width: 1000px;
-            margin: 40px auto;
+            margin: 30px auto;
             text-align: center;
         }
-        .breed-title-box {
-            display: inline-block;
-            border: 2px dashed #000;
-            padding: 10px 30px;
-            margin-bottom: 20px;
-            background: #fff;
-            font-size: 1.8rem;
-            font-weight: bold;
-        }
-        .alphabet-box {
+        .heading-bone-box {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            border: 2px dashed #333;
+            padding: 12px 40px;
             background-color: #fff;
-            border: 1px solid #333;
-            border-radius: 8px;
-            min-height: 400px;
-            padding: 25px;
-            text-align: left;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            font-size: 1.75rem;
+            font-weight: bold;
+            margin-bottom: 40px;
         }
-        .letter-tabs {
+        .bone-decor {
+            width: 30px;
+            height: auto;
+        }
+        .index-card-frame {
+            border: 1px solid #333;
+            border-radius: 4px;
+            padding: 30px;
+            min-height: 450px;
+            text-align: left;
+        }
+        .alphabetical-deck {
             display: flex;
             justify-content: space-between;
             border-bottom: 1px solid #333;
             padding-bottom: 15px;
+            margin-bottom: 30px;
             flex-wrap: wrap;
             gap: 5px;
-            margin-bottom: 25px;
         }
-        .letter-tabs span {
+        .letter-node {
+            font-size: 1rem;
             font-weight: bold;
             cursor: pointer;
-            padding: 5px 10px;
-            border: 1px solid transparent;
+            padding: 4px 8px;
             user-select: none;
         }
-        .letter-tabs span:hover {
-            border: 1px solid #000;
-            border-radius: 4px;
-            background-color: #fcdfa8;
+        .letter-node:hover {
+            background-color: rgba(255,255,255,0.6);
+            border-radius: 3px;
         }
-        .letter-tabs span.active {
+        .letter-node.active-tier {
             background-color: #333;
-            color: #fff;
-            border-radius: 4px;
+            color: #fcdfa8;
+            border-radius: 3px;
         }
-        .results-heading {
-            font-size: 1.4rem;
-            margin-bottom: 15px;
-            color: #444;
-            border-bottom: 1px dashed #ccc;
-            padding-bottom: 5px;
-        }
-        .breed-results-list {
-            list-style: none;
+        .breed-results-view {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 15px;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 20px;
+            list-style: none;
         }
-        .breed-item {
-            background: #fcdfa8;
-            padding: 10px 15px;
-            border-radius: 6px;
-            font-weight: 500;
+        .breed-result-card {
+            background-color: #fff;
             border: 1px solid rgba(0,0,0,0.1);
+            padding: 15px;
+            border-radius: 4px;
+            font-weight: bold;
         }
-        .no-results {
-            color: #888;
+        .empty-view-notice {
+            grid-column: 1 / -1;
+            text-align: center;
+            color: #666;
             font-style: italic;
+            padding-top: 50px;
         }
     </style>
 </head>
@@ -95,102 +95,95 @@
         </nav>
     </header>
 
-    <main class="breed-container">
-        <div class="breed-title-box">
-             🦴 Breed List 🦴
+    <main class="list-workspace">
+        <div class="heading-bone-box">
+            <img src="images/image_KtttQW.png" alt="Decorative Bone" class="bone-decor">
+            <span>Breed List</span>
+            <img src="images/image_KtttQW.png" alt="Decorative Bone" class="bone-decor">
         </div>
-        
-        <div class="alphabet-box">
-            <!-- Navigation Tabs (A-Z) -->
-            <div class="letter-tabs" id="tabs-container">
-                <span class="active">A</span><span>B</span><span>C</span><span>D</span><span>E</span><span>F</span><span>G</span>
-                <span>H</span><span>I</span><span>J</span><span>K</span><span>L</span><span>M</span><span>N</span>
-                <span>O</span><span>P</span><span>Q</span><span>R</span><span>S</span><span>T</span><span>U</span>
-                <span>V</span><span>W</span><span>X</span><span>Y</span><span>Z</span>
+
+        <section class="index-card-frame">
+            <div class="alphabetical-deck" id="alphabetical-deck">
+                <span class="letter-node active-tier">A</span>
+                <span class="letter-node">B</span><span class="letter-node">C</span>
+                <span class="letter-node">D</span><span class="letter-node">E</span>
+                <span class="letter-node">F</span><span class="letter-node">G</span>
+                <span class="letter-node">H</span><span class="letter-node">I</span>
+                <span class="letter-node">J</span><span class="letter-node">K</span>
+                <span class="letter-node">L</span><span class="letter-node">M</span>
+                <span class="letter-node">N</span><span class="letter-node">O</span>
+                <span class="letter-node">P</span><span class="letter-node">Q</span>
+                <span class="letter-node">R</span><span class="letter-node">S</span>
+                <span class="letter-node">T</span><span class="letter-node">U</span>
+                <span class="letter-node">V</span><span class="letter-node">W</span>
+                <span class="letter-node">X</span><span class="letter-node">Y</span>
+                <span class="letter-node">Z</span>
             </div>
-            
-            
-            <h3 class="results-heading" id="current-letter-heading">Breeds starting with "A"</h3>
-            <ul class="breed-results-list" id="breed-display-list">
-              <!-- JavaScript will add items here ask teacher how on tuesday -->
+
+            <h3 style="margin-bottom: 20px;" id="current-letter-heading">Breeds starting with "A"</h3>
+            <ul class="breed-results-view" id="breed-results-view">
+  
             </ul>
-        </div>
+        </section>
     </main>
 
     <footer class="main-footer">
         <div class="footer-column">
             <h4>The DogDex</h4>
-            <p><a href="breed-list.html">Breed List</a> | <a href="accessibility.html">Accessibility</a> | <a href="sources.html">Sources</a> | <a href="contact.html">Contact</a></p>
+            <p>Breed List | Accessibility | Sources | Contact</p>
         </div>
     </footer>
 
-
     <script>
-        // sample of dog breed database
-        const dogBreeds = [
+        const catalogDataset = [
             "Affenpinscher", "Afghan Hound", "Airedale Terrier", "Akita", "Alaskan Malamute",
             "Beagle", "Bernese Mountain Dog", "Bichon Frise", "Bloodhound", "Border Collie", "Boxer",
-            "Chihuahua", "Chow Chow", "Cocker Spaniel", "Collie",
-            "Dachshund", "Dalmatian", "Doberman Pinscher",
-            "English Bulldog", "French Bulldog",
-            "German Shepherd", "Golden Retriever", "Great Dane",
-            "Greyhound", "Havaneser", "Irish Setter", "Jack Russell Terrier",
-            "Labrador Retriever", "Maltese", "Newfoundland", "Papillon",
-            "Pomeranian", "Poodle", "Pug", "Rottweiler", "Saint Bernard", 
-            "Samoyed", "Shih Tzu", "Siberian Husky", " Shiba Inu",
-            "Vizsla", "Weimaraner", "Welsh Corgi", "Yorkshire Terrier"
+            "Chihuahua", "Chow Chow", "Cocker Spaniel", "Collie", "Dachshund", "Dalmatian", "Doberman Pinscher",
+            "English Bulldog", "French Bulldog", "German Shepherd", "Golden Retriever", "Great Dane",
+            "Greyhound", "Havanese", "Irish Setter", "Jack Russell Terrier", "Labrador Retriever", "Maltese", 
+            "Newfoundland", "Papillon", "Pomeranian", "Poodle", "Pug", "Rottweiler", "Saint Bernard", 
+            "Samoyed", "Shih Tzu", "Siberian Husky", "Shiba Inu", "Vizsla", "Weimaraner", "Welsh Corgi", "Yorkshire Terrier"
         ];
 
-        const tabsContainer = document.getElementById('tabs-container');
-        const displayList = document.getElementById('breed-display-list');
+        const deckNode = document.getElementById('alphabetical-deck');
+        const viewNode = document.getElementById('breed-results-view');
         const headingText = document.getElementById('current-letter-heading');
 
-
-        function displayLetterContent(letter) {
-
-            headingText.textContent = `Breeds starting with "${letter}"`;
+        function evaluateQueryFilter(selectedChar) {
+            headingText.textContent = `Breeds starting with "${selectedChar}"`;
+            viewNode.innerHTML = '';
             
-            
-            displayList.innerHTML = '';
-
-
-            const filteredBreeds = dogBreeds.filter(breed => 
-                breed.trim().toUpperCase().startsWith(letter)
+            const queryMatches = catalogDataset.filter(entry => 
+                entry.toUpperCase().startsWith(selectedChar.toUpperCase())
             );
 
-            if (filteredBreeds.length === 0) {
-                const emptyNotice = document.createElement('li');
-                emptyNotice.className = 'no-results';
-                emptyNotice.textContent = 'No breeds found for this letter. Check back later!';
-                displayList.appendChild(emptyNotice);
-            } else {
-                filteredBreeds.forEach(breed => {
-                    const listItem = document.createElement('li');
-                    listItem.className = 'breed-item';
-                    listItem.textContent = breed;
-                    displayList.appendChild(listItem);
-                });
+            if(queryMatches.length === 0) {
+                const noticeItem = document.createElement('li');
+                noticeItem.className = 'empty-view-notice';
+                noticeItem.textContent = 'No breed profiles logged under this character block yet.';
+                viewNode.appendChild(noticeItem);
+                return;
             }
+
+            queryMatches.forEach(matchedValue => {
+                const nodeElement = document.createElement('li');
+                nodeElement.className = 'breed-result-card';
+                nodeElement.textContent = matchedValue;
+                viewNode.appendChild(nodeElement);
+            });
         }
 
-
-        tabsContainer.addEventListener('click', (event) => {
-            if (event.target.tagName === 'SPAN') {
-                // Clear out prior selected active state highlights
-                const allTabs = tabsContainer.querySelectorAll('span');
-                allTabs.forEach(tab => tab.classList.remove('active'));
-
-
-                event.target.classList.add('active');
-
-
-                const chosenLetter = event.target.textContent;
-                displayLetterContent(chosenLetter);
+        deckNode.addEventListener('click', (routingEvent) => {
+            if(routingEvent.target.classList.contains('letter-node')) {
+                const targetNodes = deckNode.querySelectorAll('.letter-node');
+                targetNodes.forEach(elementNode => elementNode.classList.remove('active-tier'));
+                
+                routingEvent.target.classList.add('active-tier');
+                evaluateQueryFilter(routingEvent.target.textContent.trim());
             }
         });
 
-
-        displayLetterContent('A');
+        evaluateQueryFilter('A');
     </script>
 </body>
 </html>

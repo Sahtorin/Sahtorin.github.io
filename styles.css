@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #fcdfa8;
+    background-color: #fcdfa8; 
     color: #333;
 }
 
@@ -38,7 +38,7 @@ body {
     font-weight: 500;
 }
 
-/* images */
+/* this is for images */
 .hero-img {
     width: 100%;
     max-width: 1000px;
@@ -47,7 +47,7 @@ body {
     border-radius: 8px;
 }
 
-/* intro */
+
 .intro-text {
     max-width: 800px;
     margin: 40px auto;
@@ -55,7 +55,6 @@ body {
     line-height: 1.6;
 }
 
-/* card grid */
 .card-grid {
     display: flex;
     justify-content: center;
@@ -82,3 +81,5 @@ body {
     border-top: 1px solid rgba(0,0,0,0.1);
     margin-top: 100px;
 }
+
+

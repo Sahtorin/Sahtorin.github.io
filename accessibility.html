@@ -6,33 +6,39 @@
     <title>The DogDex - Accessibility</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        .center-content {
+        .access-wrapper {
             max-width: 800px;
             margin: 40px auto;
             text-align: center;
         }
-        .page-title {
-            font-size: 2rem;
-            text-decoration: underline;
-            margin-bottom: 30px;
+        .header-title-underline {
+            font-size: 2.2rem;
+            margin-bottom: 40px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
         }
-        .image-placeholder {
-            background-color: #e0e0e0;
-            height: 250px;
-            width: 400px;
-            margin: 0 auto 30px auto;
+        .header-title-underline span {
+            text-decoration: underline;
+        }
+        .title-paw-decor {
+            width: 35px;
+            height: auto;
+        }
+        .media-canvas-placeholder {
+            background-color: #b5b5b5;
+            width: 100%;
+            max-width: 500px;
+            height: 300px;
+            margin: 0 auto 40px auto;
             display: flex;
             align-items: center;
             justify-content: center;
             border-radius: 4px;
-            color: #777;
-        }
-        .text-block-placeholder {
-            background: #fff;
-            border: 1px solid #ccc;
-            height: 200px;
-            width: 100%;
-            padding: 20px;
+            color: #fff;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -50,24 +56,25 @@
         </nav>
     </header>
 
-    <main class="center-content">
-        <h1 class="page-title">🐾 Accessibility 🐾</h1>
-        
-        <div class="image-placeholder">
-            <span>[Accessibility Image Placeholder]</span>
-        </div>
+    <main class="access-wrapper">
+        <h1 class="header-title-underline">
+            <img src="images/image_oXsIlt.png" alt="Paw Print Decor" class="title-paw-decor">
+            <span>Accessibility</span>
+            <img src="images/image_oXsIlt.png" alt="Paw Print Decor" class="title-paw-decor">
+        </h1>
 
-        <div class="text-block-placeholder">
-            <!-- Accessibility text block content -->
+        <div class="media-canvas-placeholder">
+            <span>[Accessibility Image Placeholder]</span>
         </div>
     </main>
 
     <footer class="main-footer">
         <div class="footer-column">
             <h4>The DogDex</h4>
-            <p><a href="breed-list.html">Breed List</a> | <a href="accessibility.html">Accessibility</a> | <a href="sources.html">Sources</a> | <a href="contact.html">Contact</a></p>
+            <p>Breed List | Accessibility | Sources | Contact</p>
         </div>
     </footer>
 
 </body>
 </html>
+
