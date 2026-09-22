@@ -21,7 +21,7 @@ body {
     padding: 0 20px;
 }
 
-/* --- UPDATED NAVBAR STYLES START --- */
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -81,7 +81,7 @@ body {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
-/* --- UPDATED NAVBAR STYLES END --- */
+
 
 .hero-section {
     width: 100%;
