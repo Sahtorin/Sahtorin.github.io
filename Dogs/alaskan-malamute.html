@@ -9,47 +9,43 @@
 <body>
     <div id="header-placeholder"></div>
     <script>
-        fetch('header.html')
+        fetch('../header.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('header-placeholder').innerHTML = data;
             });
     </script>
-<main class="container">
-    <h1>Alaskan Malamute</h1>
-    <div class="puppy-image">
-        <img src="../Images/Alaskan-Malamute-puppy.jpg" alt="Puppy Alaskan Malamute">
-    </div>
-    
-    <div class="breed-stats">
-        <h2>Breed Rating:</h2>
-        <p>
-            Affection: 3/5                Good With Other Dogs: 3/5           
-        </p>
-        <p>
-            Good With Kids: 3/5           Ease of Training: 3/5
-        </p>
-    </div>
 
-    <div class="adult-image">
-        <img src="../Images/Alaskan-Malamute-adult.jpg" alt="Adult Alaskan Malamute">
-    </div>
+    <main class="container">
+        <h1>Alaskan Malamute</h1>
+        
+        <div class="puppy-image">
+            <img src="../Images/Alaskan-Malamute-puppy.jpg" alt="Puppy Alaskan Malamute">
+        </div>
+        
+        <div class="breed-stats">
+            <h2>Breed Rating:</h2>
+            <p>Affection: 3/5 &nbsp;&nbsp;&nbsp;&nbsp; Good With Other Dogs: 3/5</p>
+            <p>Good With Kids: 3/5 &nbsp;&nbsp;&nbsp;&nbsp; Ease of Training: 3/5</p>
+        </div>
 
-    <div class="breed-info">
-        <h2>Origin and Description:</h2>
-        <p></p>
+        <div class="adult-image">
+            <img src="../Images/Alaskan-Malamute-adult.jpg" alt="Adult Alaskan Malamute">
+        </div>
 
-        <h2>Temperament and Energy Levels:</h2>
-        <p></p>
+        <div class="breed-info">
+            <h2>Origin and Description:</h2>
+            <p></p>
 
-        <h2>Summarized Health Information:</h2>
-        <p></p>
+            <h2>Temperament and Energy Levels:</h2>
+            <p></p>
 
-        <h2>Training:</h2>
-        <p></p>
+            <h2>Summarized Health Information:</h2>
+            <p></p>
 
-
-    </div>
-</main>
+            <h2>Training:</h2>
+            <p></p>
+        </div>
+    </main>
 </body>
 </html>
