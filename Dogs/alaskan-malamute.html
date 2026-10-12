@@ -9,11 +9,17 @@
 <body>
     <div id="header-placeholder"></div>
     <script>
-        fetch('../header.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('header-placeholder').innerHTML = data;
-            });
+    fetch('../header.html')
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+        
+        const listLink = document.getElementById('nav-breed-list');
+        if (listLink) {
+            listLink.href = '../index.html';
+        }
+    });
+
     </script>
 
     <main class="container">
