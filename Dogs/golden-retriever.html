@@ -7,6 +7,14 @@
     <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
+    <div id="header-placeholder"></div>
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            });
+    </script>
     <h1>Golden Retriever</h1>
     <div class="puppy-image">
         <img src="../Images/Golden-Retriever-puppy.jpg" alt="Puppy Golden Retriever">
